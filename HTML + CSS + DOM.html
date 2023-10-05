@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>دورة HTML + CSS + DOM</title>
+      <style>
+        table, th, td {
+          border: 1px solid blue;
+        }
+      /*CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS*/
+      /*CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS*/
+
+        body{ 
+      background-color:rgba(216, 250, 254, 0.751); 
+      background-image: url('Image.ico');
+      background-repeat: no-repeat;
+      background-position:center;
+      background-size:720px;
+      background-attachment:scroll;
+      background-blend-mode:hue;
+      /*  طبعًا يمديني اختصر بس كذا اوضح*/
+      }
+
+      p { 
+        /*background-color:rgb(211, 238, 253);*/
+        color:rgb(0, 95, 136) ;
+        display: inline;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 125%;
+        /*border-style:solid;
+          border-width: thin;
+          border-color:rgb(0, 95, 136);
+          border-radius: 5px;
+        */
+        
+      }
+      
+      ul{/*background-color: rgb(211, 238, 253);*/
+        font-size: 20px;
+      }
+      
+      ol{/*background-color: rgb(211, 238, 253);*/
+        font-size: 20px; 
+    }
+
+      a{
+    color: rgb(57, 196, 255);
+    
+      }
+      a:hover{
+        color:rgb(255, 221, 0)
+        
+      }
+      
+      div{
+        color: bisque;
+        background-color:rgb(48, 170, 222) ;
+        height: 50%;
+        width: 250px;
+        /*border: 15px solid rgb(255, 231, 75);*/
+        padding: 20px;
+        margin: 20px;
+      }
+      
+      .box{
+    background-color:rgba(216, 250, 254, 0.751); 
+       height:500px;
+       width:500px;
+       border:10px solid black;
+       margin:20px;
+       position: relative;
+    }
+      .box1, .box2{
+        height: 150px;
+        width: 150px;
+      }
+
+      .box1{
+        background-color: bisque;
+        position: relative;
+        top: 5px;
+        right:125px
+      }
+
+      .box2{
+        background-color: bisque;
+        position: relative;
+        /*top: 5px;
+          right:125px;*/
+        position: absolute;
+        bottom: 0px;
+        right:145px;
+        /*position: fixed;
+        bottom: 0px;
+        right:125px;*/
+      }
+
+      nav{
+      /*position: sticky;*/
+      position:absolute;
+      left: 50;
+
+      }
+      
+      </style>
+
+
+
+  </head>
+  <body dir="rtl">
+       <h1>دورة HTML + CSS + DOM</h1> <!--Title-->
+      <img src="Image.ico" height = "150" width="150" alt="University Logo">
+
+
+    
+    <h2>وصف الدورة</h2><!--Sub title-->
+    <p><!--Description-->
+        هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+        <br>هذا نص بس عشان تعبئة المكان وليس نصًا مهمًا.
+    </p><hr>
+
+    <p><b>مواعيد المحاضرات يوميًا: </b><br>
+      من الساعة:
+      08:00<sub>am</sub>
+      وحتى الساعة:
+      11:00<sub>am</sub>
+    </p><br>
+
+    <p><b>المستويات لهذه الدورة:</b><br>
+     1<sup>st</sup> Level: أساسيات HTML + CSS<br>
+     2<sup>nd</sup> Level: مفاهيم متقدمة في HTML + CSS
+    </p><hr>
+   
+    <h2>أهداف هذه الدورة:</h2>
+    <ol type="A">
+      <li> التعرف على مفهوم الـ HTML + CSS</li>
+      <li> تعلم كل TAG والغرض من استخدامه</li>
+      <li>طرق اضافة النصوص، الفيديوهات، وغيرها من المحتويات المعتادة في صفحات الويب</li>
+    </ol><hr>
+
+    <h2>متطلبات هذه الدورة: </h2>
+    <ul type = "circle">
+     <li> متصفح (سفاري، كروم)</li>
+     <li>محرر نصوص</li>
+    </ul>
+
+    <p>للمرجع قم بالضغط 
+     <a href = "https://www.taibahu.edu.sa/Pages/AR/Home.aspx"> هنا</a>
+    </p><hr>
+
+   <p><b>مقطع الفيديو: </b></p> 
+   <video width="720" height="480" controls>
+    <source src="جامعة_طيبة.mp4" type="video/mp4"> 
+    عذرًا لا يمكن عرض هذا الفيديو 
+   </video><hr>
+  
+   <p><b>المقطع الصوتي: </b></p>
+   <audio controls>
+   <source src="مشاريع_جامعة_طيبة.mp3" type="audio/mp3">
+   </audio><hr>
+  
+   <table>
+    <caption>جدول أماكن المحاضرات: </caption>
+    <p><b>الجدول: </b></p>
+   <tr>
+    <th>اليوم</th>
+    <th>المكان</th>
+   </tr>
+
+   <tr><td>الأحد والإثنين</td> 
+       <td>CLASS A</td>
+   </tr>
+   
+   <tr><td>الثلاثاء والأربعاء</td> 
+       <td>CLASS B</td>
+   </tr>
+  
+   <tr><td colspan="2">
+          الخميس 
+          عن بعد</td>
+   </tr>
+   </table><br>
+
+   <table>
+    <caption>مثال ثاني:</caption>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Khalid</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>Omar</td>
+        <td>17</td>
+    </tr>
+   </table>
+   
+   <h2>نموذج للإنضمام إلى الدورة: </h2>
+   <form>
+    <label for="name">اسم المستخدم: </label>
+    <input type="text" id="name">
+    
+    <p>الجنس: </p>
+    <input type="radio" id="Male" name="gender">
+    <label for="Male"></label> ذكر</label>
+    <input type="radio" id="Female" name="gender">
+    <label for="Female"></label> أنثى</label>
+   
+
+   <p>من أين سمعت عن الـ HTML أو الـ CSS؟</p>
+   
+   <input type="checkbox" id="friend" name="friend">
+   <label for="friend">صديق</label><br>
+   
+   <input type="checkbox" id="Teacher" name="Teacher">
+   <label for="Teacher">معلم</label><br> 
+   
+   <input type="checkbox" id="Social Media" name="Social Media">
+   <label for="Social Media">شبكات التواصل الإجتماعي</label><br>
+
+   <input type="checkbox" id="Other" name="Other">
+   <label for="Other">أخرى (اذكرها بالأسفل): </label>
+  
+   <label for="Other"></label>
+   <input type="text" id="Other"><br><br>
+   
+  
+   <label for="City">اختر مدينتك: </label>
+   <select id="City" name="City">
+    <option value="Madina">المدينة المنورة</option>
+    <option value="Yanbu">ينبع</option>
+    <option value="Jeddah">جدة</option>
+    <option value="Riyadh">الرياض</option>
+    </select><br><br>
+
+    <input type="submit" value="       انضمام        "><br><br>
+  
+   
+   </form>
+   <a href="https://eas.taibahu.edu.sa/TaibahReg/login.do"> لرابط موقع خدمات الجامعة</a>
+  
+   <div> سنتعلم في هذه الدورة طرق التعامل مع CSS
+   </div>
+  
+   <div class ="box">
+   <div class="box1"></div>
+   <div class="box2"></div>
+   </div><br>
+
+
+   <nav dir="ltr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+   </nav><br><br><br><br><br>
+
+
+
+<!--DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM -->
+<!--DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM DOM -->
+
+
+
+<!--DOM 1-->
+  <div id="first-div">
+   <h1>Programming Languages</h1>
+   <ul>
+    <li id="first-li">JavaScript</li>
+    <li id="second-li">Kotlin</li>
+    <li id="third-li">Swift</li>
+   </ul>
+  </div>
+  <script>
+    let kotlin = document.getElementById('second-li')
+    console.log(kotlin)
+  </script>
+  
+
+
+
+<!--DOM 2-->
+  <div id="languages">
+    <h1>Programming Languages</h1>
+    <ul>
+     <li id="p-languages">JavaScript</li>
+     <li id="p-languages">Kotlin</li>
+     <li id="p-languages">Swift</li>
+    </ul>  
+    <script>
+    let languages = document.getElementsByClassName('p-languages')
+    console.log(languages[2])
+   </script>
+    </div>
+
+
+
+<!--DOM 3-->
+    <h1>Programming Languages</h1>
+   <ul>
+    <li>JavaScript</li>
+    <li>Kotlin</li>
+    <li>Swift</li>
+   </ul>
+  </div>
+  <script>
+  let list = document.getElementsByTagName('li')
+  console.log(list[2])
+  </script>
+
+
+
+<!--DOM 4-->
+<h1>Programming Languages</h1>
+<P>These Are Some Progrmming Languages: </P>
+<ul class="languages">
+ <li>JavaScript</li>
+ <p>We Can Create Interactive Websites Using JavaScript</p>
+
+ <li>Kotlin</li>
+ <p>We Can Develop Android Apps Using Kotlin</p>
+
+ <li>Swift</li>
+ <p>We Can Develop iOS Apps Using Swift</p>
+</ul>
+</div>
+<script>
+   let text = document.querySelectorAll('.languages p')
+   console.log(text)
+</script>
+
+
+
+
+
+<!--DOM 5-->
+<div id="first-div">
+    <h1>Programming Languages</h1>
+    <ul>
+     <li id="first-li">JavaScript</li>
+     <li id="second-li">Kotlin</li>
+     <li id="third-li">Swift</li>
+    </ul>
+   </div>
+   <script>
+    let android = document.querySelector("#second-li")
+    android.innerText = "Java"
+   </script>
+
+
+<!--DOM 6-->
+<div id="first-div">
+    <h1>Programming Languages</h1>
+    <ul>
+     <li id="first-li">JavaScript</li>
+     <li id="second-li">Kotlin</li>
+     <li id="third-li">Swift</li>
+    </ul>
+   </div>
+   <script>
+    let android = document.querySelector("#second-li")
+    android.style.color = "blue"
+   </script>
+
+
+
+
+<!--DOM 6-->
+<h1>Programming Languages</h1>
+<ul class="list">
+ <li>JavaScript</li>
+ <li>Kotlin</li>
+ <li>Swift</li>
+</ul>
+</div>
+<script>
+let languageList = document.querySelector(".list")
+let ruby = document.createElement("li")
+ruby.innerText = "ruby"
+languageList.append(ruby)
+console.log(languageList)
+</script>
+
+
+
+<!--DOM 7-->
+<h1>Programming Languages</h1>
+<ul class="list">
+ <li>JavaScript</li>
+ <li>Kotlin</li>
+ <li>Swift</li>
+</ul>
+</div>
+<script>
+let languageList2 = document.querySelector(".list")
+let ios = doxument.querySelectorAll("li")[2]
+ios.remove()
+console.log(languageList2)
+</script>
+
+
+
+
+<!--DOM 8-->
+<h3>Clicks: <span id="clicks">0</span></h3>
+<button type="button"onClick= "add()">+</button>
+
+<script>
+let clicks = 0;
+function add(){
+    clicks++;
+    document.getElementById("clicks").innerText = clicks
+};
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!--<i>                                       يستخدم للمائل-->
+<!--<b>                                       يستخدم للعريض-->
+<!--<em>                           يستخدم للمائل مهم وشديد-->
+<!--<strong>                     يستخدم للعريض المهم ومؤثر-->
+<!--<h1,h6>                       يستخدم لتحديد عرض العنون-->
+<!--<p>                                         يستخدم للنص-->
+<!--<body dir="rtl">              يستخم لتغيير النص لليمين-->
+<!--<sup> يستخدم للإرتفاع عن النص زي الأس للمعادلات الرياضية-->
+<!--<sub>  يستخدم للنزول عن السطر مثل مالعادلات الكيميائية-->
+<!--<br>                              \n = يستخدم لنزول سطر-->
+<!--<hr>                           يستخدم لإضافة سطر تنسيقي-->
+<!--<ol> / <ol type = "A"> يستخدم لإضافة قائمة مرتبة بالصفحة مع I, i, A, a.-->
+<!--<ul> / <ul type = "circle"> يستخدم لإضافة قائمة غير مرتبة بالصفحة مع circle -->
+<!--<li>   يستخدم لتنسيق القائمة بالترتيب مع الأمرين السابقين-->
+<!--<a> / <a href="https://NULL.com">NULLTEXT<a/>يستخدم لإنشاء روابط -->
+<!--<img src= "Image.ico" height ="150" width="150" alt="Univerity Logo"> يستخدم لوضع صورة مع مقاساتها وكلام بديل -->
+<!--<video width="" height="" controls> وبداخله تكتب:<source src=Vid.mp4 type="video/mp4"> يستخدم للإضافة فيديو -->
+<!--<audio controls> بداخله: <source scr="Marwan Talodi.mp3 type="audio/mp3" للإضافة مقطع صوتي-->
+<!--<table> <tr>CELLS <td>HEAD <td>ELSE يستخدم للجدول انظر فوق   -->
+<!--<td colspan="2" يستخدم لدمج الخلايا انظر فوق-->
+<!--<caption> يستخدم احا وسم الجدول لوصفه انظر فوق-->
+<!--<form> / <label> / <input> يستخدم للكتابة انظر فوق مع امكانية اختيار النوع-->
+<!---->
+<!---->
+<!---->
